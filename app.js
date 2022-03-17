@@ -12,7 +12,8 @@ var app = express();
 
 //set up database connection
 var mongoose = require("mongoose");
-var quizdb = "mongodb://localhost:27017/keypathQuiz";
+var quizdb = "mongodb+srv://romanolaura:Project1@cluster0.ltuzm.mongodb.net/surveyKeypath";
+
 mongoose.connect(quizdb);
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
